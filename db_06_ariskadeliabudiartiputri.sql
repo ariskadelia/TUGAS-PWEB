@@ -1,66 +1,58 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.2
+-- versi 4.7.9
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: Aug 05, 2021 at 05:58 AM
--- Server version: 10.4.14-MariaDB
--- PHP Version: 7.2.33
+-- Tuan rumah: 127.0.0.1
+-- Waktu pembuatan:19 Agu 2021 pada 11.40
+-- Versi server: 10.1.31-MariaDB
+-- Versi PHP: 5.6.34
 
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-START TRANSACTION;
-SET time_zone = "+00:00";
+SET SQL_MODE =  " NO_AUTO_VALUE_ON_ZERO " ;
+SET AUTOCOMMIT =  0 ;
+MULAI TRANSAKSI ;
+SET zona_waktu =  " +00:00 " ;
 
 
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
-
---
--- Database: `db_06_ariskadeliabudiartiputri`
---
-
--- --------------------------------------------------------
+/* !40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */ ;
+/* !40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */ ;
+/* !40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */ ;
+/* !40101 SET NAMA utf8mb4 */ ;
 
 --
--- Table structure for table `tb_siswa`
+-- Basis data: `db_06_ariskadelia`
 --
 
-CREATE TABLE `tb_siswa` (
-  `id_siswa` int(11) NOT NULL,
-  `nama` varchar(100) NOT NULL,
-  `hp` int(20) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+- ------------------------------------------------ --------
 
 --
--- Dumping data for table `tb_siswa`
+-- Struktur dari tabel `db_06_ariskadelia`
 --
 
-INSERT INTO `tb_siswa` (`id_siswa`, `nama`, `hp`) VALUES
-(1, 'ariskadeliabudiartiputri', 250504);
+CREATE  TABLE ` db_06_ariskadelia ` (
+  ` NIM `  varchar ( 20 ) NOT NULL ,
+  ` Nama_Siswa `  varchar ( 50 ) NOT NULL ,
+  ` Jurusan `  varchar ( 25 ) NOT NULL ,
+  ` Angkatan `  varchar ( 10 ) BUKAN NULL
+) ENGINE = CHARSET DEFAULT InnoDB = latin1;
 
 --
--- Indexes for dumped tables
+-- Dumping data untuk tabel `db_06_ariskadelia`
 --
 
---
--- Indexes for table `tb_siswa`
---
-ALTER TABLE `tb_siswa`
-  ADD PRIMARY KEY (`id_siswa`);
+INSERT INTO  ` db_06_ariskadelia ` ( ` NIM ` , ` Nama_Siswa ` , ` Jurusan ` , ` Angkatan ` ) VALUES
+( ' 21531059 ' , ' db_06_ariskadelia ' , ' Rekayasa Perangkat Lunak ' , ' 2020 ' );
 
 --
--- AUTO_INCREMENT for dumped tables
+-- Indeks untuk tabel yang dibuang
 --
 
 --
--- AUTO_INCREMENT for table `tb_siswa`
+-- Indeks untuk tabel `db_06_ariskadelia`
 --
-ALTER TABLE `tb_siswa`
-  MODIFY `id_siswa` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
-COMMIT;
+ALTER  TABLE  ` db_15_ariskadelia `
+  ADD PRIMARY KEY ( ` NIM ` );
+BERKOMITMEN ;
 
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION
+/* !40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */ ;
+/* !40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */ ;
+/* !40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */ ;
